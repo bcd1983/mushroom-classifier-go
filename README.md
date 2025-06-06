@@ -1,11 +1,11 @@
 # 🍄 Mushroom Classifier (Go Version)
 
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org)
-[![GTK](https://img.shields.io/badge/GTK-7FE719?style=for-the-badge&logo=gtk&logoColor=white)](https://www.gtk.org/)
+[![Fyne](https://img.shields.io/badge/Fyne-007ACC?style=for-the-badge&logo=go&logoColor=white)](https://fyne.io)
 [![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-A desktop application for mushroom identification using OpenAI's vision models. Built with Go and GTK+ for a native GUI experience with modern Go practices.
+A desktop application for mushroom identification using OpenAI's vision models. Built with Go and Fyne for a modern, cross-platform GUI experience.
 
 ## ⚠️ Important Safety Notice
 
@@ -15,35 +15,18 @@ A desktop application for mushroom identification using OpenAI's vision models. 
 
 - 🖼️ **Image Analysis**: Upload photos of mushrooms for AI-powered identification
 - 🧠 **Advanced AI**: Leverages OpenAI's GPT-4 Vision for accurate analysis
-- 🎨 **Native GUI**: Clean, intuitive interface built with GTK+ 3
+- 🎨 **Modern GUI**: Clean, intuitive interface built with Fyne - pure Go, no C dependencies
 - 📊 **Detailed Results**: Get species names, confidence levels, and safety information
 - 🔒 **Secure**: API credentials stored safely in environment files
 - 🏗️ **Modern Go Architecture**: Well-structured codebase with idiomatic Go patterns
+- 🚀 **Easy Deployment**: Single binary with no external dependencies
 
 ## 📋 Prerequisites
 
 - Go 1.21 or higher
-- GTK+ 3.0 development libraries
 - OpenAI API key with GPT-4 Vision access
 
-### macOS Installation
-
-```bash
-brew install gtk+3 pkg-config
-```
-
-### Ubuntu/Debian Installation
-
-```bash
-sudo apt-get update
-sudo apt-get install libgtk-3-dev build-essential pkg-config
-```
-
-### Fedora/RHEL Installation
-
-```bash
-sudo dnf install gtk3-devel gcc pkg-config
-```
+That's it! Fyne handles all GUI dependencies automatically.
 
 ## 🚀 Quick Start
 
@@ -166,7 +149,7 @@ The application follows Go best practices with a modular architecture:
 - **Base64 Package**: Provides image encoding functionality
 - **HTTPClient Package**: Manages API communications
 - **OpenAI Package**: Interfaces with OpenAI's vision models
-- **GUI Package**: Implements the GTK+ user interface
+- **GUI Package**: Implements the Fyne-based user interface
 - **Main Package**: Orchestrates the application lifecycle
 
 ### Key Design Principles
@@ -176,6 +159,7 @@ The application follows Go best practices with a modular architecture:
 - **Concurrency**: Proper use of goroutines for non-blocking UI operations
 - **Security**: API keys stored in environment files, never hardcoded
 - **Documentation**: Extensive godoc comments throughout
+- **Pure Go**: No CGO or C dependencies thanks to Fyne
 
 ## 🤝 Contributing
 
@@ -204,8 +188,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - OpenAI for providing the GPT-4 Vision API
-- GTK+ team for the excellent GUI framework
-- gotk3 project for Go GTK+ bindings
+- Fyne team for the excellent pure Go GUI framework
 - The mycology community for mushroom identification resources
 
 ## 🐛 Known Issues

@@ -3,9 +3,7 @@ package main
 
 import (
 	"log"
-	"os"
 
-	"github.com/gotk3/gotk3/gtk"
 	"github.com/mushroom-classifier/mushroom-classifier-go/config"
 	"github.com/mushroom-classifier/mushroom-classifier-go/gui"
 )
@@ -16,9 +14,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to load configuration: %v", err)
 	}
-
-	// Initialize GTK
-	gtk.Init(&os.Args)
 
 	// Create and setup GUI
 	app, err := gui.NewApp(cfg)
